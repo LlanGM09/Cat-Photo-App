@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>CatPhotoApp</title>
+    </head>
+    <body>
+        <main>
+            <h1>CatPhotoApp</h1>
+            <!--El elemento section es usado para definir secciones en un documento, como capítulos, encabezados, pies de página,
+             o cualquier otra sección del documento. Es un elemento semántico que ayuda con la SEO y la accesibilidad.-->
+            <section>
+              <h2>Cap Photos</h2>
+             <!-- TODO: Add link to cat photos -->
+             <!--El atributo target especica donde abrir elemento enlazado.
+             target="_blank" abre el elemento enlazado en una nueva pestaña o ventana-->
+             <p>See more <a href="https://freecatphotoapp.com" target="_blank">cat photos</a> in our gallery.</p>
+             <!-- convertir una imagen en un enlace-->
+             <a heref="https://freecatphotoapp.com" ><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back"></a>
+            </section>
+            <section>
+                <h2>Cat Lists</h2>
+                <h3>Things cats love:</h3>
+                <!--Para crear una lista no ordenada de elementos, puedes usar el elemento ul.-->
+                <!--El elemento li es usado para crear una lista de elementos en una lista ordenada o en una lista desordenada.-->
+                <ul>
+                    <li>cat nip</li>
+                    <li>laser pointers</li>
+                    <li>lasagna</li>
+                </ul>
+                <!--El elemento figure representa contenido independiente y te permitirá asociar una imagen a una descripción.-->
+               <figure><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+                    <figcaption>Cat <em>love</em> lasagna.</figcaption>
+                </figure>
+                <h3>Top 3 things cats hate:</h3>
+                <!--El código de una lista ordenada, ordered list (ol), es similar al de una lista no ordenada, unordered list (ul),
+                pero los elemento de una lista ordenada aparecen enumerados.-->
+                <ol>
+                    <li>flea treatment</li>
+                    <li>thunder</li>
+                    <li>other cats</li>   
+                </ol>
+                <figure>
+                    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+                    <!--El elemento strong se utiliza para indicar que una parte de un texto es importante o urgente.-->
+                    <figcaption>Cats <strong>hate</strong>  other cats.</figcaption>
+                </figure>
+                
+            </section>
+            <section>
+                <h2>Cat Form</h2>
+                <!-- 1. El atributo action indica dónde se deben enviar los datos del formulario.-->
+                <!-- 2. Hay diferentes tipos de elementos input, los cuales los puedes crear con el atributo type. Puedes crear fácilmente un campo de contraseña (password), 
+                un botón de reinicio (reset) o un control para permitir a los usuarios seleccionar un archivo desde su computadora.-->
+                <!-- 3. Para que los datos de un formulario sean accesibles en la ubicación especificada en el atributo action, 
+                debes darle al campo de texto un atributo name y asignarle un valor que represente los datos que se están enviando.-->
+                <form action="https://freecatphotoapp.com/submit-cat-photo"> 
+                    <fieldset>
+                        <legend>Is your cat an indoor or outdoor cat?</legend>
+                        <label><input checked id="indoor" type="radio" name="indoor-outdoor" value="indoor">Indoor</label>
+                        <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor" >Outdoor</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>What's your cat's personality?</legend>
+                        <input checked id="loving" type="checkbox" name="personality" value="loving"><label for="loving">Loving</label>
+                        <input id="lazy" type="checkbox" name="personality" value="lazy"><label for="lazy">Lazy</label>
+                        <input id="energetic" type="checkbox" name="personality" value="energetic"><label for="energetic">Energetic</label>
+                    </fieldset>
+                    <input type="text" name="catphotourl" placeholder="cat photo URL" required> 
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p> 
+        </footer>
+
+    </body>
+</html>
